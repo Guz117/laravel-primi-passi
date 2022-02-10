@@ -17,8 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/contatti', function () {
+    return view('contatti');
+})->name('contact');
 
-Route::get('/', function () {
+
+
+Route::get('/home', function () {
     $data = [
         'students' => [
             [
@@ -51,4 +56,4 @@ Route::get('/', function () {
 
     ];
     return view('home', $data);
-});
+})->name('home');

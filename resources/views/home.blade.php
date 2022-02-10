@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <a href="{{ route('contact') }}">Contatti</a>
     <h1>Home Laravel</h1>
     @foreach ($students as $student)
         <h3>{{ $student['name']}} {{ $student['lastname']}}</h3>
