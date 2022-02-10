@@ -10,6 +10,14 @@
 
 <body>
     <h1>Home Laravel</h1>
+    @foreach ($students as $student)
+        <h3>{{ $student['name']}} {{ $student['lastname']}}</h3>
+        @foreach ($student['skills'] as $skill)
+            <ul>
+                <li>{{ $skill }}</li> 
+            </ul>
+        @endforeach    
+    @endforeach
 </body>
 
 </html>
