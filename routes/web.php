@@ -21,6 +21,17 @@ Route::get('/contatti', function () {
     return view('contatti');
 })->name('contact');
 
+Route::get('/info', function () {
+    return view('info');
+})->name('info');
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+
+Route::get('/link', function () {
+    return view('link');
+})->name('link');
 
 
 Route::get('/home', function () {

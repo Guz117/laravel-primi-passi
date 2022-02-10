@@ -10,6 +10,10 @@
 
 <body>
     <a href="{{ route('contact') }}">Contatti</a>
+    <a href="{{ route('info') }}">Info</a>
+    <a href="{{ route('news') }}">News</a>
+    <a href="{{ route('link') }}">Link</a>
+
     <h1>Home Laravel</h1>
     @foreach ($students as $student)
         <h3>{{ $student['name']}} {{ $student['lastname']}}</h3>
